@@ -1,104 +1,104 @@
 [
     {
-        "bookId": "1",
-        "bookName": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "book_image": "https://whitmorerarebooks.cdn.bibliopolis.com/pictures/1542.jpg?auto=webp&v=1452577731",
-        "review": "A powerful exploration of racism and justice in the American South.",
-        "totalPages": 336,
-        "rating": 4.5,
-        "category": "Fiction",
-        "tags": [
-            "Classic",
-            "Drama",
-            "Social Issues"
-        ],
-        "publisher": "HarperCollins",
-        "yearOfPublishing": 1960
+      "bookId": "1",
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "book_image": "https://whitmorerarebooks.cdn.bibliopolis.com/pictures/1542.jpg?auto=webp&v=1452577731",
+      "review": "A powerful exploration of racism and justice in the American South. Set in the fictional town of Maycomb, Alabama, during the 1930s, the story follows the perspective of a young girl named Scout Finch as she witnesses her father, Atticus Finch, a respected lawyer, defend a black man accused of a heinous crime. The novel delves into themes of prejudice, injustice, and the loss of innocence, ultimately highlighting the importance of empathy and understanding.",
+      "totalPages": 336,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": [
+        "Classic",
+        "Drama",
+        "Social Issues"
+      ],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 1960
     },
     {
-        "bookId": "2",
-        "bookName": "1984",
-        "author": "George Orwell",
-        "book_image": "https://i.postimg.cc/3RcFGqt4/1984-by-george-orwell-CPBK7-J.jpg",
-        "review": "A chilling dystopian novel about a totalitarian society.",
-        "totalPages": 328,
-        "rating": 4.7,
-        "category": "Science Fiction",
-        "tags": [
-            "Dystopian",
-            "Political",
-            "Thriller"
-        ],
-        "publisher": "Harcourt Brace Jovanovich",
-        "yearOfPublishing": 1949
+      "bookId": "2",
+      "bookName": "1984",
+      "author": "George Orwell",
+      "book_image": "https://i.postimg.cc/3RcFGqt4/1984-by-george-orwell-CPBK7-J.jpg",
+      "review": "A chilling dystopian novel about a totalitarian society. Set in a future where the government controls every aspect of citizens' lives, the story follows Winston Smith, a disillusioned government employee who begins to question the oppressive regime. As he engages in forbidden acts of thoughtcrime and rebellion, Winston becomes a target of the Thought Police, leading to a terrifying descent into paranoia and despair. The novel explores themes of surveillance, propaganda, and the human desire for freedom.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Science Fiction",
+      "tags": [
+        "Dystopian",
+        "Political",
+        "Thriller"
+      ],
+      "publisher": "Harcourt Brace Jovanovich",
+      "yearOfPublishing": 1949
     },
     {
-        "bookId": "3",
-        "bookName": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "book_image": "https://i.postimg.cc/Sxh3jX20/download.jpg",
-        "review": "A classic romance novel about love, class, and societal expectations.",
-        "totalPages": 279,
-        "rating": 4.3,
-        "category": "Romance",
-        "tags": [
-            "Classic",
-            "Historical Fiction",
-            "Comedy"
-        ],
-        "publisher": "T. E. Lawrence",
-        "yearOfPublishing": 1813
+      "bookId": "3",
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "book_image": "https://i.postimg.cc/Sxh3jX20/download.jpg",
+      "review": "A classic romance novel about love, class, and societal expectations. Set in Regency England, the story centers on the Bennett family, whose five daughters are desperate to find husbands. Elizabeth Bennet, the intelligent and witty protagonist, initially dislikes the arrogant Mr. Darcy, but as their relationship develops, she begins to see him in a new light. The novel explores themes of social class, marriage, and the complexities of human relationships.",
+      "totalPages": 279,
+      "rating": 4.3,
+      "category": "Romance",
+      "tags": [
+        "Classic",
+        "Historical Fiction",
+        "Comedy"
+      ],
+      "publisher": "T. E. Lawrence",
+      "yearOfPublishing": 1813
     },
     {
-        "bookId": "4",
-        "bookName": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "book_image": "https://i.postimg.cc/5t9rqZSn/download.jpg",
-        "review": "A tale of wealth, love, and the American Dream in the 1920s.",
-        "totalPages": 180,
-        "rating": 4.8,
-        "category": "Fiction",
-        "tags": [
-            "American Literature",
-            "Historical Fiction",
-            "Tragedy"
-        ],
-        "publisher": "Charles Scribner's Sons",
-        "yearOfPublishing": 1925
+      "bookId": "4",
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "book_image": "https://i.postimg.cc/5t9rqZSn/download.jpg",
+      "review": "A tale of wealth, love, and the American Dream in the 1920s. Set in the glamorous world of Long Island's Gold Coast, the story follows Jay Gatsby, a mysterious millionaire, as he throws extravagant parties in hopes of reuniting with his lost love, Daisy Buchanan. The novel explores themes of wealth, class, the American Dream, and the destructive power of obsession.",
+      "totalPages": 180,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": [
+        "American Literature",
+        "Historical Fiction",
+        "Tragedy"
+      ],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
     },
     {
-        "bookId": "5",
-        "bookName": "Harry Potter and the Sorcerer's Stone",
-        "author": "J.K. Rowling",
-        "book_image": "https://i.postimg.cc/DzCMCBCF/9781408855652-2-Z.jpg",
-        "review": "A magical adventure about a young wizard discovering his powers.",
-        "totalPages": 309,
-        "rating": 4.9,
-        "category": "Fantasy",
-        "tags": [
-            "Children's Literature",
-            "Adventure",
-            "Magic"
-        ],
-        "publisher": "Bloomsbury",
-        "yearOfPublishing": 1997
+      "bookId": "5",
+      "bookName": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "book_image": "https://i.postimg.cc/DzCMCBCF/9781408855652-2-Z.jpg",
+      "review": "A magical adventure about a young wizard discovering his powers. Harry Potter, an orphan living with his cruel aunt and uncle, discovers that he is actually a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. As he navigates the magical world, Harry must confront a dark force that threatens to destroy the wizarding community. The novel explores themes of friendship, courage, and the power of good over evil.",
+      "totalPages": 309,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": [
+        "Children's Literature",
+        "Adventure",
+        "Magic"
+      ],
+      "publisher": "Bloomsbury",
+      "yearOfPublishing": 1997
     },
     {
-        "bookId": "6",
-        "bookName": "The Lord of the Rings",
-        "author": "J.R.R. Tolkien",
-        "book_image": "https://i.postimg.cc/W3hfxgKZ/LOTR-Illustrated-3-D-838x1024.jpg",
-        "review": "An epic fantasy trilogy about a hobbit's quest to destroy an evil ring.",
-        "totalPages": 1178,
-        "rating": 4.9,
-        "category": "Fantasy",
-        "tags": [
-            "Epic",
-            "Adventure",
-            "Mythology"
-        ],
-        "publisher": "George Allen & Unwin",
-        "yearOfPublishing": 1954
+      "bookId": "6",
+      "bookName": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "book_image": "https://i.postimg.cc/W3hfxgKZ/LOTR-Illustrated-3-D-838x1024.jpg",
+      "review": "An epic fantasy trilogy about a hobbit's quest to destroy an evil ring. Set in a mythical world filled with elves, dwarves, and other fantastical creatures, the story follows Frodo Baggins, a hobbit, as he embarks on a perilous journey to destroy the One Ring, a powerful artifact that threatens to corrupt all of Middle-earth. The trilogy explores themes of good versus evil, friendship, and the importance of sacrifice.",
+      "totalPages": 1178,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": [
+        "Epic",
+        "Adventure",
+        "Mythology"
+      ],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1954
     }
-]
+  ]
