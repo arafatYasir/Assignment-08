@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const BookDetails = () => {
@@ -6,6 +5,7 @@ const BookDetails = () => {
     const {bookId} = useParams();
     const book = books.find(book => book.bookId === bookId);
     const { bookName, author, book_image, rating, tags, category, review, totalPages, publisher, yearOfPublishing } = book;
+
     return (
         <div className='mt-14 flex items-center gap-20'>
             {/* image container */}

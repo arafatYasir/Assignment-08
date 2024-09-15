@@ -4,3 +4,14 @@ nav a.active {
     padding: 10px 20px;
     border-radius: 0.5rem;
 }
+
+nav a.active:hover {
+    background-color: #23BE0A;
+    color: white;
+}
+
+nav a:hover {
+    border-radius: 0.5rem;
+    background-color: rgb(203, 203, 203);
+    padding: 10px 20px;
+}
