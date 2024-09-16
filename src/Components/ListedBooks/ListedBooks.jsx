@@ -4,6 +4,9 @@ import { useState } from "react";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishListBooks from "../WishlistBooks/WishlistBooks";
 
+// styles
+import "./ListedBooks.css"
+
 const ListedBooks = () => {
     const allBooks = useLoaderData();
     const readBookIds = getBooks("read");
@@ -21,8 +24,10 @@ const ListedBooks = () => {
 
     return (
         <div className="tabs-container">
+            {/* Heading */}
+            <h1 className="text-center font-bold text-3xl mt-16">Books</h1>
             {/* Tabs */}
-            <div className="tabs">
+            <div className="listed-books-tabs">
                 <div className={`tab ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabChange(0)}>Read Books</div>
                 <div className={`tab ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabChange(1)}>Wishlist Books</div>
             </div>
@@ -30,11 +35,11 @@ const ListedBooks = () => {
             {/* Content of tabs */}
             <div className="tabs-content">
                 {activeTab === 0 && (
-                    readBooks.map(book => <ReadBooks book={book}></ReadBooks>)
+                    readBooks.map(book => <ReadBooks book={book} key={book.bookId}></ReadBooks>)
                 )}
 
                 {activeTab === 1 && (
-                    wishlistBooks.map(book => <WishListBooks book={book}></WishListBooks>)
+                    wishlistBooks.map(book => <WishListBooks book={book} key={book.bookId}></WishListBooks>)
                 )}
             </div>
         </div>
