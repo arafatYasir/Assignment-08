@@ -60,6 +60,9 @@ const BookDetails = () => {
             saveBooks("read", bookId);
             readToast();
         }
+        else {
+            wishlistWarningToast();
+        }
     }
     const handleWishlist = () => {
         const readBooks = getBooks("read");

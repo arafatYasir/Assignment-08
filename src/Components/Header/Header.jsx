@@ -31,7 +31,7 @@ const Header = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-semibold">Book Vibe</a>
+                <p className="btn btn-ghost text-3xl font-semibold">Book Vibe</p>
             </div>
             <div className="navbar-center hidden lg:flex gap-10 text-xl">
                 {navLinks}
