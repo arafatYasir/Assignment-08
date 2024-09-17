@@ -2,9 +2,10 @@
 import { HiOutlineClock } from "react-icons/hi2";
 import { GoPeople } from "react-icons/go";
 import { MdOutlineContactPage } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const WishListBooks = ({ book }) => {
-    const { bookName, author, book_image, tags, publisher, yearOfPublishing, totalPages, category, rating } = book;
+    const { bookId, bookName, author, book_image, tags, publisher, yearOfPublishing, totalPages, category, rating } = book;
     return (
         <div className="border rounded-lg p-6 flex gap-6 mb-6">
             {/* Image */}
@@ -38,7 +39,9 @@ const WishListBooks = ({ book }) => {
                 <div className="flex mt-4 gap-3">
                     <div className='bg-[#328eff20] text-xl rounded-full px-5 py-2 text-[#328EFF]'>Category: {category}</div>
                     <div className='bg-[#ffad3320] text-xl rounded-full px-5 py-2 text-[#FFAC33]'>Rating: {rating}</div>
-                    <button className="text-white text-xl bg-[#23BE0A] px-5 py-2 rounded-full">View Details</button>
+                    <Link to={`/books/${bookId}`}>
+                        <button className="text-white text-xl bg-[#23BE0A] px-5 py-2 rounded-full">View Details</button>
+                    </Link>
                 </div>
 
             </div>
