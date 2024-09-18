@@ -11,7 +11,7 @@ const Header = () => {
         <nav className="navbar bg-base-100 mt-12">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -31,12 +31,12 @@ const Header = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <p className="btn btn-ghost text-3xl font-semibold">Book Vibe</p>
+                <p className="btn btn-ghost text-3xl font-semibold px-1">Book Vibe</p>
             </div>
             <div className="navbar-center hidden lg:flex gap-10 text-xl">
                 {navLinks}
             </div>
-            <div className="navbar-end gap-5">
+            <div className="navbar-end gap-1 md:gap-5">
                 <a className="btn btn-ghost text-white bg-[#23BE0A] px-5 text-xl">Sign In</a>
                 <a className="btn btn-ghost text-white bg-[#59C6D2] px-5 text-xl">Sign Up</a>
             </div>

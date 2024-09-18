@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Book = ({ book }) => {
     const { bookName, author, book_image, rating, tags, category, bookId } = book;
     return (
-            <Link to={`/books/${bookId}`} className="border w-96 p-6 rounded-xl">
+            <Link to={`/books/${bookId}`} className="border w-96 p-6 rounded-xl mx-auto">
                 {/* Image */}
                 <div className="px-24 py-8 bg-[#13131324] rounded-xl">
                     <img src={book_image} className="w-36 mx-auto" alt="" />

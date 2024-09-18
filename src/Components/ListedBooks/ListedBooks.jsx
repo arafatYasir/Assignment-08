@@ -130,8 +130,9 @@ const ListedBooks = () => {
 
     return (
         <div className="tabs-container">
-            {/* Heading */}
+            {/* Heading & title */}
             <h1 className="text-center font-bold text-3xl mt-16">Books</h1>
+            <p className="text-xl text-center mt-4 font-medium">Here, you can find all of your books you added to the list. Feel free to add more on future. You can also sort them as you want.</p>
 
             {/* Sort By */}
             <div className="text-center mt-16 mb-14">
