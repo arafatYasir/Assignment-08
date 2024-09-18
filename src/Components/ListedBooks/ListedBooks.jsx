@@ -1,8 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import { getBooks } from "../../Utility/localstorage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishListBooks from "../WishlistBooks/WishlistBooks";
+
+// rect icons
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 // styles
 import "./ListedBooks.css"
@@ -12,8 +15,18 @@ const ListedBooks = () => {
     const readBookIds = getBooks("read");
     const wishlistBookIds = getBooks("wishlist");
     // finding already read and wishlisted books among all books
-    const readBooks = allBooks.filter(book => readBookIds.includes(book.bookId));
-    const wishlistBooks = allBooks.filter(book => wishlistBookIds.includes(book.bookId));
+    const [readBooks, setReadBooks] = useState([]);
+    const [wishlistBooks, setWishlistBooks] = useState([]);
+
+    useEffect(() => {
+        if (allBooks.length > 0) {
+            const booksReaded = allBooks.filter(book => readBookIds.includes(book.bookId))
+            const booksWishlisted = allBooks.filter(book => wishlistBookIds.includes(book.bookId));
+
+            setReadBooks(booksReaded);
+            setWishlistBooks(booksWishlisted);
+        }
+    }, []);
 
     // using state to change tabs
     const [activeTab, setActiveTab] = useState(0);
@@ -22,13 +35,115 @@ const ListedBooks = () => {
         setActiveTab(value);
     }
 
+    // sorting function
+    const handleSort = (name) => {
+        if (activeTab == 0) {
+            if (name === 'rating') {
+                const temp = [...readBooks];
+
+                for (let i = 0; i < temp.length - 1; i++) {
+                    for (let j = 0; j < temp.length - i - 1; j++) {
+                        if (temp[j].rating < temp[j + 1].rating) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setReadBooks(temp);
+            }
+            else if (name === 'pages') {
+                const temp = [...readBooks];
+
+                for(let i = 0; i < temp.length - 1; i++) {
+                    for(let j = 0; j < temp.length - i - 1; j++) {
+                        if(temp[j].totalPages < temp[j + 1].totalPages) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setReadBooks(temp);
+            }
+            else if(name === 'year') {
+                const temp = [...readBooks];
+
+                for(let i = 0; i < temp.length - 1; i++) {
+                    for(let j = 0; j < temp.length - i - 1; j++) {
+                        if(temp[j].yearOfPublishing < temp[j + 1].yearOfPublishing) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setReadBooks(temp);
+            }
+        }
+        else {
+            if (name === 'rating') {
+                const temp = [...wishlistBooks];
+
+                for (let i = 0; i < temp.length - 1; i++) {
+                    for (let j = 0; j < temp.length - i - 1; j++) {
+                        if (temp[j].rating < temp[j + 1].rating) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setWishlistBooks(temp);
+            }
+            else if (name === 'pages') {
+                const temp = [...wishlistBooks];
+
+                for(let i = 0; i < temp.length - 1; i++) {
+                    for(let j = 0; j < temp.length - i - 1; j++) {
+                        if(temp[j].totalPages < temp[j + 1].totalPages) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setWishlistBooks(temp);
+            }
+            else if(name === 'year') {
+                const temp = [...wishlistBooks];
+
+                for(let i = 0; i < temp.length - 1; i++) {
+                    for(let j = 0; j < temp.length - i - 1; j++) {
+                        if(temp[j].yearOfPublishing < temp[j + 1].yearOfPublishing) {
+                            let t = temp[j];
+                            temp[j] = temp[j + 1];
+                            temp[j + 1] = t;
+                        }
+                    }
+                }
+                setWishlistBooks(temp);
+            }
+        }
+
+    }
+
     return (
         <div className="tabs-container">
             {/* Heading */}
             <h1 className="text-center font-bold text-3xl mt-16">Books</h1>
 
             {/* Sort By */}
-            
+            <div className="text-center mt-16 mb-14">
+                <details className="dropdown">
+                    <summary className="btn m-1 bg-[#23BE0A] text-white px-7 font-semibold text-xl">Sort By <span className="text-2xl"><MdKeyboardArrowDown /></span></summary>
+                    <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li onClick={() => handleSort("rating")}><a>Rating</a></li>
+                        <li onClick={() => handleSort("pages")}><a>Pages</a></li>
+                        <li onClick={() => handleSort("year")}><a>Published Year</a></li>
+                    </ul>
+                </details>
+            </div>
 
             {/* Tabs */}
             <div className="listed-books-tabs">
