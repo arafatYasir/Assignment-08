@@ -137,7 +137,7 @@ const ListedBooks = () => {
             {/* Sort By */}
             <div className="text-center mt-16 mb-14">
                 <details className="dropdown">
-                    <summary className="btn m-1 bg-[#23BE0A] text-white px-7 font-semibold text-xl">Sort By <span className="text-2xl"><MdKeyboardArrowDown /></span></summary>
+                    <summary className="btn m-1 bg-[#23BE0A] text-white px-7 font-semibold text-lg md:text-xl">Sort By <span className="text-2xl"><MdKeyboardArrowDown /></span></summary>
                     <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                         <li onClick={() => handleSort("rating")}><a>Rating</a></li>
                         <li onClick={() => handleSort("pages")}><a>Pages</a></li>

@@ -8,9 +8,9 @@ const Banner = () => {
                     src="https://i.postimg.cc/WzdSfVdw/pngwing-1-1.png"
                     className="max-w-sm rounded-lg w-2/3 mt-10 lg:mt-0" />
                 <div>
-                    <h1 className="text-6xl max-w-3xl font-bold text-center lg:text-left">Books to freshen up your bookshelf</h1>
+                    <h1 className="text-4xl md:text-6xl max-w-3xl font-bold text-center lg:text-left">Books to freshen up your bookshelf</h1>
                     <div className="text-center mb-10 lg:text-left lg:mb-0">
-                        <Link to="/listed_books"><button className="btn btn-ghost mt-12 text-xl px-5 bg-[#23BE0A] text-white">View The List</button></Link>
+                        <Link to="/listed_books"><button className="btn btn-ghost mt-12 text-lg md:text-xl px-5 bg-[#23BE0A] text-white">View The List</button></Link>
                     </div>
                 </div>
             </div>

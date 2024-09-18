@@ -82,21 +82,21 @@ const BookDetails = () => {
     }
 
     return (
-        <div className='mt-14 flex items-center gap-20'>
+        <div className='mt-14 flex flex-col lg:flex-row items-center gap-20'>
             {/* image container */}
             <div>
-                <img className='rounded-3xl md:min-w-[490px]' src={book_image} alt="" />
+                <img className='rounded-3xl w-96 md:min-w-[490px]' src={book_image} alt="" />
             </div>
             {/* details container */}
-            <div>
-                <h1 className="text-5xl font-bold mb-4">{bookName}</h1>
+            <div className='px-2 lg:p-0'>
+                <h1 className="text-4xl lg:text-5xl font-bold mb-4">{bookName}</h1>
                 <h3 className="text-2xl font-medium mb-6">By: {author}</h3>
                 <hr />
                 <h3 className="text-2xl font-medium mt-6 mb-6">{category}</h3>
                 <hr />
                 <p className='text-lg'><span className='font-bold'>Review:</span> {review}</p>
 
-                <div className='flex gap-4 mt-6 mb-6'>
+                <div className='flex gap-4 mt-6 mb-6 items-center'>
                     <span className='text-lg font-bold'>Tag</span>
                     <span className='bg-[#13131314] rounded-full px-2 text-[#23BE0A]'>{tags[0]}</span>
                     <span className='bg-[#13131314] rounded-full px-2 text-[#23BE0A]'>{tags[1]}</span>
